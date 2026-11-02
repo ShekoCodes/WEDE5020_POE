@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-assets/style.css">
+    <script src="js-assets/script.js"></script>
+    <title>Afro Crown Beauty | Book Treatment</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Afro Crown Beauty</h1>
+            <p><em>Royalty rooted in crowning your coils</em></p>
+        </div>
+        
+         <nav class="navbar-full">
+        <!-- Mobile Toggle Button -->
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="services.html">Services</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="bookings.html">Bookings</a> | 
+            <a href="contact.html">Contact Us</a> |
+             <a href="enquiries.html">Enquiries</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Book a Hair Treatment / Salon Service</h2>
+            
+            <p style="text-align: center;">
+                Ready to pamper your coils? Use the booking portal below to schedule your appointment with our natural hair specialists. Once submitted, our reception team will review your requested time slot and confirm your booking via phone call or SMS.
+            </p>
+            
+            <p style="text-align: center;">
+                <em>Please note: for complex protective styles (like Goddess Locs or Waist-Length Braids), please ensure you select an appointment time early in the day to allow our stylists full dedication to your crown.</em>
+            </p>
+
+            <!-- Booking Interactive Form -->
+            <form id="booking-form" action="#" method="post">
+                <p>
+                    <label for="client-name">Full Name:</label>
+                    <input type="text" id="client-name" name="client-name" required>
+                </p>
+                
+                <p>
+                    <label for="client-phone">Phone Number:</label>
+                    <input type="tel" id="client-phone" name="client-phone" required>
+                </p>
+                
+                <p>
+                    <label for="service-select">Select Hair Treatment:</label>
+                    <select id="service-select" name="service-select">
+                        <option value="deep-condition">Deep Coil Hydration Treatment (R 350)</option>
+                        <option value="braids">Protective Box Braids / Knotless (R 650)</option>
+                        <option value="loc-retwist">Loc Maintenance & Retwist (R 400)</option>
+                        <option value="silk-press">Silk Press & Trim (R 500)</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="booking-date">Preferred Date:</label>
+                    <input type="date" id="booking-date" name="booking-date" required>
+                </p>
+                
+                <p>
+                    <button type="submit"> Confirm Appointment Request </button>
+                </p>
+            </form>
+
+            <!-- Appointment Debrief Summary Feedback Box -->
+            <div id="booking-summary" style="margin-top: 30px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Afro Crown Beauty. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-assets/style.css">
+    <script src="js-assets/script.js" defer></script>
+    <title>Afro Crown Beauty | Shop Products</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Afro Crown Beauty</h1>
+            <p><em>Royalty rooted in crowning your coils</em></p>
+        </div>
+        
+        <nav class="navbar-full">
+            <!-- Mobile Toggle Button -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="services.html">Services</a> |
+                <a href="shop.html" class="active">Shop</a> |
+                <a href="bookings.html">Bookings</a> | 
+                <a href="contact.html">Contact Us</a> |
+                <a href="enquiries.html">Enquiries</a> 
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+       <section class="featured-highlights">
+       <!-- Wrap the shop product articles in a grid container -->
+            <div class="shop-products-grid">
+                <article class="shop-item">
+                    <h3>Royal Coil Hydration Butter (250ml)</h3>
+                    <p>Deeply moisturizes 4C coily hair with pure shea butter, chebe powder and essential oils.</p>
+                    <img src="images/sheabutter.png" alt="Royal Coil Hydration Butter" width="300" height="600">
+                    <p><strong>Price: R 180.00</strong></p>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart('Royal Coil Hydration Butter', 180)">Add to Cart</button>
+                </article>
+
+                <article class="shop-item">
+                    <h3>Royal Leave-In Conditioner (200ml)</h3>
+                    <p>Provides easy detangling, softness and protection against daily environmental stressors.</p>
+                    <img src="images/conditioner.png" alt="Royal Leave-In Conditioner" width="300" height="600">
+                    <p><strong>Price: R 160.00</strong></p>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart('Royal Leave-In Conditioner', 160)">Add to Cart</button>
+                </article>
+
+                <article class="shop-item">
+                    <h3>Royal Growth Elixir (100ml)</h3>
+                    <p>Infused with peppermint, rosemary and castor oil to soothe dry scalps and stimulate hair follicles.</p>
+                    <img src="images/hairoil.png" alt="Royal Growth Elixir" width="300" height="600">
+                    <p><strong>Price: R 150.00</strong></p>
+                    <button type="button" class="add-to-cart-btn" onclick="addToCart('Royal Growth Elixir', 150)">Add to Cart</button>
+                </article>
+
+            </div>
+            <!-- Shopping Cart & Delivery Checkout Section -->
+            <div id="cart-checkout-section" style="margin-top: 50px; background: #242424; padding: 30px; border-radius: 8px; color: #fff; text-align: left;">
+                <h3>🛒 Your Shopping Cart (<span id="cart-count">0</span> items)</h3>
+                <ul id="cart-items" style="list-style-type: disc; margin-left: 20px; margin-bottom: 20px;">
+                    <li>Your cart is currently empty.</li>
+                </ul>
+                <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px;">Total: <span id="cart-total">R 0.00</span></p>
+
+                <h3>📦 Delivery & Payment Checkout</h3>
+                <form id="checkout-form">
+                    <p>
+                        <label for="checkout-name">Full Name:</label><br>
+                        <input type="text" id="checkout-name" name="checkout-name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                    </p>
+                    <p>
+                        <label for="checkout-address">Delivery Address:</label><br>
+                        <textarea id="checkout-address" name="checkout-address" rows="3" required style="width: 100%; padding: 8px; margin-top: 5px;" placeholder="Street address, City, Postal code"></textarea>
+                    </p>
+                    <p>
+                        <label for="payment-method">Payment Method:</label><br>
+                        <select id="payment-method" name="payment-method" style="width: 100%; padding: 8px; margin-top: 5px;">
+                            <option value="card">Credit / Debit Card</option>
+                            <option value="eft">Instant EFT / Bank Transfer</option>
+                            <option value="cod">Cash on Delivery / Pickup</option>
+                        </select>
+                    </p>
+                    <p style="margin-top: 20px;">
+                        <button type="submit" style="background-color: #d4af37; color: #000; font-weight: bold; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Place Order & Pay</button>
+                    </p>
+                </form>
+                <div id="order-success-message" style="margin-top: 20px;"></div>
+            </div>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year">2026</span> Afro Crown Beauty. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
